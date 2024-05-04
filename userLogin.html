@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>mess Manegment </h1>
+        </div>
+        <nav class="navbar">
+            <div class="container">
+                <div class="login">
+                    <div class="login-dropdown">
+                        <button class="dropbtn" onclick="toggleDropdown()">Login ▾</button>
+                        <div class="dropdown-content" id="dropdown-content">
+                            <a href="./userLogin.html">User Login</a>
+                            <a href="./adminLogin.html">Admin Login</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-links">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Feedback</a>
+                    <a href="#">Menu</a>
+                    <a href="#">Contact</a>
+                </div>
+                <span class="menuBar"><i class="fa-solid fa-bars "></i></span>
+            </div>
+        </nav>
+    </header>
+
+     <div class="subNav">
+        <div>
+
+            <span class="closeBar"><i class="fa-solid fa-x"></i></span>
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Feedback</a>
+            <a href="#">Menu</a>
+            <a href="#">Contact</a>
+        </div>
+     </div>
+    </header>
+
+    <div class="userlogin__container">
+        <form class="login-form">
+            <h2>User Login</h2>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+            <div class="signup-link">
+                <span>Don't have an account?</span>
+                <a href="#">Sign up</a>
+            </div>
+        </form>
+    </div>
+    <script src="/index.js"></script>
+</body>
+</html>
